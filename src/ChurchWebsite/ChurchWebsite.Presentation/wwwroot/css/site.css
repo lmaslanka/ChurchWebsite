@@ -1,6 +1,11 @@
-﻿body {
-    padding-top: 50px;
+﻿html {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body {
     padding-bottom: 20px;
+    background-color: #c8c4ab;
 }
 
 /* Wrapping element */
@@ -47,4 +52,38 @@ textarea {
     .carousel-caption {
         display: none;
     }
+}
+
+.information-container {
+    margin-top: 25px;
+    border-top: 3px solid #287EC7;
+    padding: 10px 10px 10px 10px;
+    background-color: #fff;
+}
+
+.top-header-brand {
+    margin-bottom: 0;
+}
+
+.custom-navbar {
+    border-radius: 0;
+    border: none;
+    background-color: #00BFB5;
+}
+
+.custom-navbar-header {
+    width: 100%;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-toggle {
+    z-index: 3;
 }

@@ -26,7 +26,14 @@
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse top-header-brand custom-navbar">
+        <div class="container">
+            <div class="navbar-header custom-navbar-header">
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Burgessville Baptist Church</a>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-inverse custom-navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">ChurchWebsite.Presentation</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -49,12 +56,37 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - Burgessville Baptist Church</p>
-        </footer>
-    </div>
-
+        <div class="container">
+            <footer class="panel-footer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.718684803476!2d-80.66336493633885!3d43.02712917589128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c249e5796e95d%3A0x84b02c4c926f08f1!2sBurgessville+Baptist+Church!5e0!3m2!1sen!2sca!4v1495985974684" width="600" height="250" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3>Church Contact</h3>
+                            <address>
+                                <strong>Burgessville Baptist Church</strong><br>
+                                63 Church St, W<br>
+                                Burgessville, ON<br>
+                                N0J 1C0<br>
+                                <p>519-424-9817</p>
+                            </address>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Email</h3>
+                            <a href="mailto:emmajohnston.pastor@gmail.com">emmajohnston.pastor@gmail.com</a>.<br>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Social Media</h3>
+                            <a class="btn btn-social-icon btn-facebook">
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p>&copy; 2017 - Burgessville Baptist Church</p>
+            </footer>
+        </div>
+        </div>
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
