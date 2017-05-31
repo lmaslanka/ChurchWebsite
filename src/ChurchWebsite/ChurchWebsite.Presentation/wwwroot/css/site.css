@@ -67,13 +67,14 @@ textarea {
 
 .custom-navbar {
     border-radius: 0;
-    background-color: #fff;
+    background-color: #8a0e0e;
 }
 
-.custom-navbar-header {
-    width: 100%;
+.custom-navbar-text {
+    color: #fff;
 }
 
 .panel-footer {
     background-color: #00aae5;
+    
 }
