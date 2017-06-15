@@ -20,6 +20,27 @@ namespace ChurchWebsite.Presentation.Controllers
             return View();
         }
 
+        public IActionResult Ministry()
+        {
+            ViewData["Message"] = "Your application Ministry description.";
+
+            return View();
+        }
+
+        public IActionResult Event()
+        {
+            ViewData["Message"] = "Your application Event description.";
+
+            return View();
+        }
+
+        public IActionResult Calendar()
+        {
+            ViewData["Message"] = "Your application Calendar description.";
+
+            return View();
+        }
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";

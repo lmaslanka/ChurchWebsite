@@ -74,7 +74,82 @@ textarea {
     color: #fff;
 }
 
-.panel-footer {
-    background-color: #00aae5;
-    
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
 }
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+.sub-text {
+    margin: 0 0 60px 0;
+}
+
+.sub-text-headline {
+    font-family: 'Magneto', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 34px;
+    color: #444444;
+    padding: 20px 0 20px 0;
+    margin: 0 0 35px 0;
+    border-top: 1px solid #8a0e0e;
+    border-bottom: 1px solid #8a0e0e;
+}
+
+.sub-text-wrapper {
+    padding-top: 40px;
+    padding-right: 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+     opacity: 0.7;
+    }
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.icon-bar {
+    width: 90px; 
+    background-color: #555; 
+}
+
+.icon-bar a {
+    display: block; 
+    text-align: center; 
+    padding: 16px; 
+    transition: all 0.3s ease; 
+    color: white; 
+    font-size: 36px; 
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+        }
+
+.active {
+    background-color: #4CAF50; 
+}
+
+

@@ -13,6 +13,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </environment>
 
     <environment names="Staging,Production">
@@ -42,46 +44,31 @@
             <div class="navbar-collapse collapse custom-navbar ">
                 <ul class="nav navbar-nav">
                     <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="About">About Us</a></li>
+                    <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Ministry">Ministries</a></li>
+                    <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Event">Events</a></li>
+                    <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Calendar">Calendar</a></li>
+                    <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    
         @RenderBody()
-        <div class="container">
-            <footer class="panel-footer">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11666.718684803476!2d-80.66336493633885!3d43.02712917589128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c249e5796e95d%3A0x84b02c4c926f08f1!2sBurgessville+Baptist+Church!5e0!3m2!1sen!2sca!4v1495985974684" width="600" height="250" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h3>Church Contact</h3>
-                            <address>
-                                <strong>Burgessville Baptist Church</strong><br>
-                                63 Church St, W<br>
-                                Burgessville, ON<br>
-                                N0J 1C0<br>
-                                <p>519-424-9817</p>
-                            </address>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Email</h3>
-                            <a href="mailto:emmajohnston.pastor@gmail.com">emmajohnston.pastor@gmail.com</a>.<br>
-                        </div>
-                        <div class="col-sm-4">
-                            <h3>Social Media</h3>
-                            <a class="btn btn-social-icon btn-facebook">
-                                <span class="fa fa-facebook"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <p>&copy; 2017 - Burgessville Baptist Church</p>
-            </footer>
-        </div>
-        </div>
+    <div>
+        <footer class="information-container text-center">
+            <div class="map-frame map-content">
+                <iframe style="width:100%; height: 200px; background-color:#ccc;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.894326974375!2d-80.66181998408884!3d43.02261137914798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c249e5796e95d%3A0x84b02c4c926f08f1!2sBurgessville+Baptist+Church!5e0!3m2!1sen!2sca!4v1497552490860" width="600" height="450" allowfullscreen></iframe>
+            </div><br />
+            <div class="caption">
+            <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Back To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a><br><br>
+            <p>&copy; 2017 - Burgessville Baptist Church</p>
+            </div>
+        </footer>
+    </div>
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
