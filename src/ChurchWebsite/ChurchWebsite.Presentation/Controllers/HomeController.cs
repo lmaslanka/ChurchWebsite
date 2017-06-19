@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-namespace ChurchWebsite.Presentation.Controllers
+﻿namespace ChurchWebsite.Presentation.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using ChurchWebsite.Presentation.Data;
+    using System.Threading.Tasks;
+    using Microsoft.EntityFrameworkCore;
+    using System.Linq;
+
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -27,11 +34,11 @@ namespace ChurchWebsite.Presentation.Controllers
             return View();
         }
 
-        public IActionResult Event()
+        public async Task<IActionResult> Event()
         {
             ViewData["Message"] = "Your application Event description.";
 
-            return View();
+            return View(await _context.EventItems.OrderByDescending(e => e.EventDate).ToListAsync());
         }
 
         public IActionResult Calendar()

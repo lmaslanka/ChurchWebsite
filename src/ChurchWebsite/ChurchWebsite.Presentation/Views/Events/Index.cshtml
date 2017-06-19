@@ -1,0 +1,56 @@
+@model IEnumerable<ChurchWebsite.Presentation.Models.EventsModels.EventItem>
+
+@{
+    ViewData["Title"] = "Events";
+}
+
+<div class="container">
+    <h2>Events</h2>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventText)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EventDateExpiry)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventTitle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventText)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EventDateExpiry)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.RecordId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.RecordId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.RecordId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

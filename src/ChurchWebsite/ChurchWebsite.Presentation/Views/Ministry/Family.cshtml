@@ -1,0 +1,71 @@
+@{
+    ViewData["Title"] = "Family Ministry";
+}
+
+<div class="container">
+
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sub-text-wrapper">
+                        <div class="sub-text">
+                            <div class="sub-text-headline">
+                                <h4>
+                                    In dapibus, velit vitae consequat aliquet, tortor sem feugiat ex, nec vestibulum purus tortor sed est.
+                                    Curabitur volutpat laoreet ligula, vitae volutpat libero euismod id. Nullam sapien dui, sodales in dolor non,
+                                    varius sodales nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    Morbi maximus pulvinar lectus, vel molestie est posuere sit amet. Integer facilisis, nisl nec tincidunt aliquet,
+                                    mi diam congue turpis, non congue ligula enim eget mauris. Sed dignissim lorem massa, vitae elementum leo lacinia eu.
+                                    Integer a tortor elit. Cras iaculis efficitur vulputate.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="event-title-container">NEEDS A NAME</h3>
+                    <span class="event-date-container">Mondays 6:30-8:00pm</span>
+                    <span class="event-date-container">(Starting in September 2017)</span>
+                    <p class="event-text-container">
+                        We meet ever Monday evening, 6:30pm until 8:00pm for a time of desserts and coffee, followed by themed times of learning and discussion. 
+                        This program is designed to explore issues of general interest to our Community. Issues may inlude Grief and Recovery, topice in Parenting, developing leadership skills,
+                        religion and culture and many more! For a complete list of upcoming topics, see our <a asp-controller="Home" asp-action="Calendar" class="in-paragraph-link">Calendar of Events</a>.
+                    </p>
+                    <p class="event-text-container">
+                        This program is designed for families - there are specific activities and programs designed for adults, youth, and children. We encourage everyone to attend and come
+                        away having learned something that will positively impact themselves or their community.
+                    </p>
+                    <p class="event-text-container">Guest speakers and experts on each topic will be visiting Burgessville Baptist Church once a month. Free will offering only - everyone welcome!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="event-title-container">Reel Family Time</h3>
+                    <span class="event-date-container">Quarterly 7:00-9:00pm</span>
+                    <span class="event-date-container">October, December, February and April</span>
+                    <p class="event-text-container">
+                        Every four months, we run a family friendly movie on our big screen. We provide popcorn, treats and opportunities for discussion. 
+                        Families are welcome to join us, watch a current G or PG rated movie and go home with a load of resources to encourage family discussion and time together. Bring your blankets, 
+                        pillows and feel free to wear your pyjamas. Our program is free and will feature movies in the month of October, December, February and April.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Family" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Family">Familly Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Adult" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Adult">Adult Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Youth" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Youth">Youth Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children Ministry</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -8,9 +8,10 @@ using ChurchWebsite.Presentation.Data;
 namespace ChurchWebsite.Presentation.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170618214217_EventsTableAdded")]
+    partial class EventsTableAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -75,13 +76,7 @@ namespace ChurchWebsite.Presentation.Data.Migrations
 
                     b.Property<DateTime>("EventDateExpiry");
 
-                    b.Property<string>("EventText")
-                        .IsRequired()
-                        .HasMaxLength(512);
-
-                    b.Property<string>("EventTitle")
-                        .IsRequired()
-                        .HasMaxLength(64);
+                    b.Property<string>("EventText");
 
                     b.HasKey("RecordId");
 

@@ -257,7 +257,7 @@ footer a:hover {
 .logo-image {
     position: absolute;
     top: 70px;
-    left: 40%;
+    left: 15%;
 }
 
 .panorama-image {
@@ -272,4 +272,37 @@ footer a:hover {
 
 .navbar .navbar-collapse {
     text-align: center;
+}
+
+.event-text-container {
+    margin: 2px 0 0 0;
+    padding: 6px 6px 6px 6px;
+    color: #000;
+}
+
+.event-date-container {
+    padding: 0 0 0 6px;
+    font-size: 18px;
+    color: #3b5998;
+}
+
+.event-title-container {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #ffffff;
+    background-color: #494949;
+}
+
+.carousel-caption p {
+    font-size: 40px;
+}
+
+.in-paragraph-link {
+    font-weight: bold;
+    color: #3b5998;
 }

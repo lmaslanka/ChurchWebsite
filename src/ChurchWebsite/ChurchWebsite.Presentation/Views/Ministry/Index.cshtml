@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Our Ministries";
+}
+
+<div class="container">
+
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        <div class="col-md-9">
+            <div class="sub-text-wrapper">
+                <div class="sub-text">
+                    <div class="sub-text-headline">
+                        <h4>
+                            In quis sem vel velit pharetra volutpat. Cras placerat in neque vitae varius. Cras viverra lacus ipsum, 
+                            convallis rutrum risus feugiat ut. Suspendisse eu purus porta, blandit elit molestie, suscipit quam. 
+                            Maecenas sagittis et nulla sit amet hendrerit. Morbi auctor bibendum mollis. Ut sed semper velit, id 
+                            elementum risus. Aliquam euismod quis lacus in pellentesque. Suspendisse eu mauris vestibulum, posuere 
+                            felis vel, sollicitudin nisl. Suspendisse eu risus sit amet est eleifend tincidunt eget quis arcu. 
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Family" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Family">Familly Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Adult" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Adult">Adult Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Youth" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Youth">Youth Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children Ministry</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

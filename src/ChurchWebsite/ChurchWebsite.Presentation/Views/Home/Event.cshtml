@@ -1,10 +1,7 @@
-
+@model IEnumerable<ChurchWebsite.Presentation.Models.EventsModels.EventItem>
 @{
     ViewData["Title"] = "Events";
 }
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="container">
     
@@ -24,4 +21,16 @@
             </div>
         </div>
     </div>
+
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="event-title-container">@item.EventTitle</h3>
+                <span class="event-date-container">@item.EventDate.ToString("D")</span>
+                <p class="event-text-container">@item.EventText</p>
+            </div>
+        </div>
+    }
+
 </div>

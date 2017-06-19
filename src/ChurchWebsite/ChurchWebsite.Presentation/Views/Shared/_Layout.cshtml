@@ -42,17 +42,9 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Home" && ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")"><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")"><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="About">About Us</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle custom-navbar-text" data-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Family">Our Ministries<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Family">Family Ministry</a></li>
-                            <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Adult">Adult Ministry</a></li>
-                            <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Youth">Youth Ministry</a></li>
-                            <li><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Children">Children Ministry</a></li>
-                        </ul>
-                    </li>
+                    <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" ? "active" : "")"><a class="custom-navbar-text" asp-area="" asp-controller="Ministry" asp-action="Index">Our Ministries</a></li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Event" ? "active" : "")"><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Event">Events</a></li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Calendar" ? "active" : "")"><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Calendar">Calendar</a></li>
                     <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")"><a class="custom-navbar-text" asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>

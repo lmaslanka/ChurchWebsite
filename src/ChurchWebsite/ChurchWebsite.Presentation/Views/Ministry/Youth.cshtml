@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Youth";
+}
+
+<div class="container">
+
+    <h2>@ViewData["Title"]</h2>
+
+    <div class="row">
+        <div class="col-md-9">
+            <div class="sub-text-wrapper">
+                <div class="sub-text">
+                    <div class="sub-text-headline">
+                        <h4>
+                            If you have any questions about Burgessville Baptist Church, would like to visit with us,
+                            or would like to get more involved, please do not hesitate to contact us - we would love to hear from you!
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Family" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Family">Familly Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Adult" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Adult">Adult Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Youth" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Youth">Youth Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children Ministry</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
