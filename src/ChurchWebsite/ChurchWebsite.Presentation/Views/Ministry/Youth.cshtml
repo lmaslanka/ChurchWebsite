@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Youth";
+    ViewData["Title"] = "Youth Ministry";
 }
 
 <div class="container">
@@ -8,14 +8,36 @@
 
     <div class="row">
         <div class="col-md-9">
-            <div class="sub-text-wrapper">
-                <div class="sub-text">
-                    <div class="sub-text-headline">
-                        <h4>
-                            If you have any questions about Burgessville Baptist Church, would like to visit with us,
-                            or would like to get more involved, please do not hesitate to contact us - we would love to hear from you!
-                        </h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sub-text-wrapper">
+                        <div class="sub-text">
+                            <div class="sub-text-headline">
+                                <h4>
+                                    In dapibus, velit vitae consequat aliquet, tortor sem feugiat ex, nec vestibulum purus tortor sed est.
+                                    Curabitur volutpat laoreet ligula, vitae volutpat libero euismod id. Nullam sapien dui, sodales in dolor non,
+                                    varius sodales nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    Morbi maximus pulvinar lectus, vel molestie est posuere sit amet. Integer facilisis, nisl nec tincidunt aliquet,
+                                    mi diam congue turpis, non congue ligula enim eget mauris. Sed dignissim lorem massa, vitae elementum leo lacinia eu.
+                                    Integer a tortor elit. Cras iaculis efficitur vulputate.
+                                </h4>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="event-title-container">Junior High Youth Group</h3>
+                    <span class="event-date-container">Youth Grades 6 to 8</span>
+                    <span class="event-date-container">(Program runs for 8 week blocks)</span>
+                    <p class="event-text-container">
+                        We are part of a community based junior high group that focuses on developing strong leadership skills, promoting service within our community and 
+                        connecting with our youth grades 6-8. We run this program in conjunction with other local churches and the Norwich Youth For Christ. The program rotates locations, 
+                        but is open to all youth in this age range. Program runs for 8 week blocks - see our <a asp-controller="Home" asp-action="Calendar" class="in-paragraph-link">Calendar of Events</a>
+                        for next start date.
+                    </p>
                 </div>
             </div>
         </div>
@@ -24,7 +46,7 @@
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Family" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Family">Familly Ministry</a></li>
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Adult" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Adult">Adult Ministry</a></li>
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Youth" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Youth">Youth Ministry</a></li>
-                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children's Ministry</a></li>
             </ul>
         </div>
     </div>

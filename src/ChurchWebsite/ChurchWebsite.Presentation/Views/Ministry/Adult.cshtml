@@ -29,41 +29,48 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="event-title-container">NEEDS A NAME</h3>
-                    <span class="event-date-container">Mondays 6:30-8:00pm</span>
-                    <span class="event-date-container">(Starting in September 2017)</span>
+                    <h3 class="event-title-container">Walking and Support Group</h3>
+                    <span class="event-date-container">Tuesday mornings 9:30-11:00am</span>
+                    <span class="event-date-container">(Program runs April-November)</span>
                     <p class="event-text-container">
-                        We meet ever Monday evening, 6:30pm until 8:00pm for a time of desserts and coffee, followed by themed times of learning and discussion.
-                        This program is designed to explore issues of general interest to our Community. Issues may inlude Grief and Recovery, topice in Parenting, developing leadership skills,
-                        religion and culture and many more! For a complete list of upcoming topics, see our <a asp-controller="Home" asp-action="Calendar" class="in-paragraph-link">Calendar of Events</a>.
+                        We meet every Tuesday morning (rain or shine) to walk together. This is a time of connection and exercise where everyone is welcome to join. It is drop in format, 
+                        so just come by when you are free! We meet in the parking lot and leave together - bring umbrellas for the rain. Everyone is welcome to come into the church for a 
+                        time of prayer afterwards from 11:00-11:30am, or just stay for the walk if that works best.
                     </p>
-                    <p>
-                        This program is designed for families - there are specific activities and programs designed for adults, youth, and children. We encourage everyone to attend and come
-                        away having learned something that will positively impact themselves or their community.
-                    </p>
-                    <p>Guest speakers and experts on each topic will be visiting Burgessville Baptist Church once a month. Free will offering only - everyone welcome!</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="event-title-container">Reel Family Time</h3>
-                    <span class="event-date-container">Quarterly 7:00-9:00pm</span>
-                    <span class="event-date-container">October, December, February and April</span>
+                    <h3 class="event-title-container">Ladies Bible Study</h3>
+                    <span class="event-date-container">Tuesdays 9:30-11:30am (Winter)</span>
                     <p class="event-text-container">
-                        Every four months, we run a family friendly movie on our big screen. We provide popcorn, treats and opportunities for discussion.
-                        Families are welcome to join us, watch a current G or PG rated movie and go home with a load of resources to encourage family discussion and time together. Bring your blankets,
-                        pillows and feel free to wear your pyjamas. Our program is free and will feature movies in the month of October, December, February and April.
+                        We run a weekly Ladies Bible Study on Tuesday mornings through the winter (January to March). This study varies each year, but allows a safe and welcoming environment 
+                        for women in all walks of life to come together, ask questions, search scripture and encourage one another on their journey of faith. This program is designed to push us deeper, 
+                        reflect on ourselves and our choices and guide us into a closer relationship with Jesus Christ.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="event-title-container">Grief and Support Group</h3>
+                    <span class="event-date-container">First Wednesday of the Month 7:00-9:00pm</span>
+                    <p class="event-text-container">
+                        We meet once a month to surround ourselves with positivity, support and love as we wrestle through our own personal experiences of Grief. All those who are grieving, 
+                        whether through loss, relationship break ups, illness, or any other life struggle, we welcome you to join us for a time of fellowship, support and care. Listen to guest 
+                        speakers, be given tools for strength and recovery and simply know that you are not alone. 
                     </p>
                 </div>
             </div>
         </div>
+
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Family" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Family">Familly Ministry</a></li>
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Adult" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Adult">Adult Ministry</a></li>
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Youth" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Youth">Youth Ministry</a></li>
-                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children's Ministry</a></li>
             </ul>
         </div>
     </div>

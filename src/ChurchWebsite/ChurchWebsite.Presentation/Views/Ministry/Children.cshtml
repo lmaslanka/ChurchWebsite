@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Children";
+    ViewData["Title"] = "Children's Ministry";
 }
 
 <div class="container">
@@ -8,23 +8,57 @@
 
     <div class="row">
         <div class="col-md-9">
-            <div class="sub-text-wrapper">
-                <div class="sub-text">
-                    <div class="sub-text-headline">
-                        <h4>
-                            If you have any questions about Burgessville Baptist Church, would like to visit with us,
-                            or would like to get more involved, please do not hesitate to contact us - we would love to hear from you!
-                        </h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sub-text-wrapper">
+                        <div class="sub-text">
+                            <div class="sub-text-headline">
+                                <h4>
+                                    In dapibus, velit vitae consequat aliquet, tortor sem feugiat ex, nec vestibulum purus tortor sed est.
+                                    Curabitur volutpat laoreet ligula, vitae volutpat libero euismod id. Nullam sapien dui, sodales in dolor non,
+                                    varius sodales nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                    Morbi maximus pulvinar lectus, vel molestie est posuere sit amet. Integer facilisis, nisl nec tincidunt aliquet,
+                                    mi diam congue turpis, non congue ligula enim eget mauris. Sed dignissim lorem massa, vitae elementum leo lacinia eu.
+                                    Integer a tortor elit. Cras iaculis efficitur vulputate.
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="event-title-container">Sunday School</h3>
+                    <span class="event-date-container">Children ages 3 to 12</span>
+                    <p class="event-text-container">
+                        We run a weekly Sunday School during our church service that caters to children ages 3-12. Crafts, games and Biblically based lessons help inform the children, 
+                        while keeping things fun, fast paced and culturally relevant. Any children who do not wish to be part of our Sunday School program are more than welcome to join us 
+                        during the service.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="event-title-container">Vacation Bible School (VBS)</h3>
+                    <span class="event-date-container">Children ages 4 to 10</span>
+                    <p class="event-text-container">
+                        Every year we run a one week long day camp for kids ages 4-10. We explore different themes such as Medieval Times, Around the World, Mad Science and Under the Sea. 
+                        Kids will have a great time singing, playing games, doing crafts, having cool themed snacks, hearing stories and making friends. The week is free and we welcome all kids 
+                        to join us for a fun packed time of learning and activity!
+                    </p>
+                </div>
+            </div>
+
         </div>
+
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Family" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Family">Familly Ministry</a></li>
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Adult" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Adult">Adult Ministry</a></li>
                 <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Youth" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Youth">Youth Ministry</a></li>
-                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children Ministry</a></li>
+                <li class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Ministry" && ViewContext.RouteData.Values["Action"].ToString() == "Children" ? "active" : "")" role="presentation"><a asp-controller="Ministry" asp-action="Children">Children's Ministry</a></li>
             </ul>
         </div>
     </div>
