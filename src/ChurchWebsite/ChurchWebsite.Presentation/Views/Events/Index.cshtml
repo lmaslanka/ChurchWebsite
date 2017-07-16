@@ -5,12 +5,12 @@
 }
 
 <div class="container">
-    <h2>Events</h2>
 
+    <h2>Event Listing</h2>
     <p>
-        <a asp-action="Create">Create New</a>
+        <a asp-action="Create">Create New Event</a>
     </p>
-    <table class="table">
+    <table class="table table-hover">
         <thead>
             <tr>
                 <th>
@@ -32,19 +32,18 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>
+                    <td style="width:130px;">
                         @Html.DisplayFor(modelItem => item.EventTitle)
-                    </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.EventText)
                     </td>
-                    <td>
+                    <td style="width:150px; height:50px;">
                         @Html.DisplayFor(modelItem => item.EventDate)
                     </td>
-                    <td>
+                    <td style="width:150px; height:50px;">
                         @Html.DisplayFor(modelItem => item.EventDateExpiry)
                     </td>
-                    <td>
+                    <td style="width:150px; height:50px;">
                         <a asp-action="Edit" asp-route-id="@item.RecordId">Edit</a> |
                         <a asp-action="Details" asp-route-id="@item.RecordId">Details</a> |
                         <a asp-action="Delete" asp-route-id="@item.RecordId">Delete</a>
