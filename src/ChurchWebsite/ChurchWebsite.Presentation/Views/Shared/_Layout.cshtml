@@ -24,6 +24,8 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 
+    <link rel="stylesheet" href="~/css/datepicker/bootstrap-datetimepicker.min.css" />
+
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
@@ -117,7 +119,9 @@
                 crossorigin="anonymous"
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
-
+        
+        <script src="~/js/moment/moment.min.js" asp-append-version="true"></script>
+        <script src="~/js/datepicker/bootstrap-datetimepicker.min.js" asp-append-version="true"></script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
