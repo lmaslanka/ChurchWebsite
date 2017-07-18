@@ -14,7 +14,6 @@
         public string EventText { get; set; }
 
         [Display(Name = "Event Date")]
-        [DataType(DataType.Date)]
         public DateTime EventDate { get; set; }
 
         [Display(Name = "Event Expiry Date")]
