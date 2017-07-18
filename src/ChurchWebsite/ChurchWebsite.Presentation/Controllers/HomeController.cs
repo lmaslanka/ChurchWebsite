@@ -27,13 +27,6 @@
             return View();
         }
 
-        public IActionResult Ministry()
-        {
-            ViewData["Message"] = "Your application Ministry description.";
-
-            return View();
-        }
-
         public async Task<IActionResult> Event()
         {
             ViewData["Message"] = "Your application Event description.";
