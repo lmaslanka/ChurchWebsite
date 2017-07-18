@@ -41,7 +41,7 @@
                 <label asp-for="EventDateExpiry" class="col-md-2 control-label"></label>
                 <div class="col-md-10">
                     <div class="input-group date" id="date-picker">
-                        <input asp-for="EventDateExpiry" class="form-control" placeholder="MM/DD/YYYY" type="text" />
+                        <input asp-for="EventDateExpiry" class="form-control" id="datetimepicker2" placeholder="MM/DD/YYYY" type="text" />
                         <span class="input-group-addon add-on-width" id="btn" style="cursor:pointer;">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
@@ -64,6 +64,5 @@
 
 
 @section Scripts {
-    $('#datetimepicker1').datetimepicker();
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
