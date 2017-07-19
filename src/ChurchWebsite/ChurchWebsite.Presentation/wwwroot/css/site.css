@@ -33,6 +33,7 @@ textarea {
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
+    color: #000000;
 }
 
 /* buttons and links extension to use brackets: [ click me ] */
